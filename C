@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{  
+	double radius;
+	double diameter; 
+	double const PI = 3.1415;
+	double circum;
+
+
+	printf("Enter radius: ");
+    scanf_s("%lf", &radius);
+	
+	if (radius > 0 ){
+		diameter = radius * 2;
+		circum = diameter * PI;
+		printf("The diameter is: %.2lf\nThe circumference is: %.2lf\n ", diameter,circum);
+	} else {
+		printf("Error!. Radius is less than zero.");
+	}
+	 return 0; 
+}
